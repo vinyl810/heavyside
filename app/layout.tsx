@@ -1,22 +1,30 @@
-import './globals.css'
-import { Inter, Roboto_Mono } from 'next/font/google'
+import React from 'react';
+/* eslint-disable */
+import { IBM_Plex_Sans_KR, Noto_Sans_KR } from 'next/font/google';
+/* eslint-enable */
+import './globals.css';
+import Header from './components/Header';
 
-const inter = Inter({ subsets: ['latin'] })
-const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
+const notoSansKr = Noto_Sans_KR({ weight: '100', subsets: ['latin'] });
 
 export const metadata = {
-  title: 'HeavyCase',
+  title: 'Heavyside',
   description: 'How to write code in heavycase',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className, roboto_mono.className}>{children}</body>
+      <body className={notoSansKr.className}>
+        <main className="flex min-h-screen flex-col items-center">
+          <Header />
+          {children}
+        </main>
+      </body>
     </html>
-  )
+  );
 }
