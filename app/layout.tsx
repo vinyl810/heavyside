@@ -5,7 +5,7 @@ import { IBM_Plex_Sans_KR, Noto_Sans_KR } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 
-const notoSansKr = Noto_Sans_KR({ weight: '100', subsets: ['latin'] });
+const notoSansKr = Noto_Sans_KR({ weight: '400', subsets: ['latin'] });
 
 export const metadata = {
   title: 'Heavyside',

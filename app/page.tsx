@@ -3,9 +3,9 @@ import Logo from './icons/Logo';
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-screen h-screen justify-center align-center p-2 pt-4">
+    <div className="flex flex-col w-screen h-screen justify-center align-center p-2">
       <Link href="/" className="m-auto mb-0">
-        <Logo width={150} height={150} primary="#eee" secondary="#aaf" />
+        <Logo width={150} height={150} />
       </Link>
       <span className="m-auto mt-4 mb-0 font-bold text-2xl">HEAVYSIDE</span>
       <Link

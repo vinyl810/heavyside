@@ -11,13 +11,13 @@ export default function Logo({
   secondary?: string;
   shadow?: string;
 }) {
-  const shadowSize = (((width ?? 100) + (height ?? 100)) / 2 / 100) * 2;
+  const shadowSize = (((width ?? 100) + (height ?? 100)) / 2 / 100) * 1.5;
 
   return (
     <svg
       width={width}
       height={height}
-      viewBox="-15 15 90 90"
+      viewBox="-10 15 80 90"
       color="black"
       stroke={primary}
       style={{
@@ -30,8 +30,7 @@ export default function Logo({
             M 60 85 L 60 40
             M 40 40 C 50 35, 50 35, 60 40
             M 20 75 L 30 75 L 40 70
-            M 20 90 C 30 95, 30 95, 40 90
-          "
+            M 20 90 C 30 95, 30 95, 40 90"
         strokeWidth="10"
         strokeLinecap="round"
       />
@@ -49,7 +48,7 @@ export default function Logo({
 Logo.defaultProps = {
   width: 50,
   height: 50,
-  primary: '#eeeeee',
+  primary: '#dddddd',
   secondary: '#aaaaff',
-  shadow: '#aaaaaa',
+  shadow: '#a1a1a1',
 };
